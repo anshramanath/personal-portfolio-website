@@ -1,0 +1,299 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fdfcf8;
+    color: #222222;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 90%;
+    margin: 4rem auto 4rem 8rem;
+    padding-right: 2rem;
+}
+
+/* Sections */
+section {
+    margin-bottom: 5rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    display: inline-block;
+    background: linear-gradient(120deg, rgba(255, 245, 190, 0.95) 40%, rgba(255, 245, 190, 0.85) 100%);
+    padding: 0.05rem 0.3rem;
+    border-radius: 17px;
+}
+
+p, li {
+    font-size: 1.1rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+a {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+.intro {
+    text-align: left;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bio {
+    font-size: 1.2rem;
+    max-width: 650px;
+}
+
+.hobbies {
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin-top: 1rem;
+}
+  
+
+/* Contact links */
+.contact-links a {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Work & Projects Section */
+.work-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+ 
+.work-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-right: 1rem;
+}
+
+.tech-stack {
+    margin: 0.2rem 0 0.8rem;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #777777;
+}
+  
+.work-text {
+    flex: 1;
+}
+  
+.work-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.work-item {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+  
+.work-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+  
+.work-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+  
+.work-item p {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+}
+  
+.work-item a {
+    color: #3366cc;
+    font-size: 1rem;
+}  
+
+/* Contact Section */
+.contact-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+  
+.contact-icon {
+    width: auto;
+    height: 32px;
+    transition: transform 0.2s ease;
+}
+  
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Experience Section */
+.experience-grid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; 
+    gap: 2rem;
+    padding-bottom: 1rem;
+    scrollbar-width: thin; 
+}
+  
+.experience-grid::-webkit-scrollbar {
+    height: 8px;
+}
+  
+.experience-grid::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 4px;
+}
+  
+.experience-item {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 400px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+  
+.experience-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.experience-logo:hover {
+    transform: scale(1.1);
+}
+  
+.experience-text {
+    display: flex;
+    flex-direction: column;
+}
+  
+.experience-text h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+  
+.experience-text h4 {
+    margin: 0.2rem 0 0.5rem;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #555;
+}
+  
+.experience-text p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Typewriter Look */
+.typewriter {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 0.15em solid #222;
+    animation: typing 1.7s linear forwards, blink-caret 1s step-end infinite;
+    margin-bottom: 1rem;
+}
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 11ch }
+}
+  
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+/* Text Effects */
+.bold {
+    font-weight: bold;
+}
+
+.highlight {
+    background: linear-gradient(120deg, rgba(255, 220, 180, 0.95) 40%, rgba(255, 220, 180, 0.85) 100%);
+    padding: 0.05rem 0.3rem;
+    border-radius: 10px;
+}
+
+.highlight-outline {
+    padding: 0.05rem 0.3rem;
+    border: 2px solid rgba(255, 180, 120, 0.8);
+    border-radius: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #f4a261;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+/* Media Settings */
+@media (max-width: 768px) {
+    .container {
+      margin: 2rem auto;
+      padding: 0 1rem;
+      max-width: 90%;
+    }
+  
+    .work-image {
+      display: none;
+    }
+}
