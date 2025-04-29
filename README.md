@@ -6,7 +6,7 @@ A minimalist and responsive personal portfolio website built with HTML and CSS.
 It showcases my projects, work experience, and interests through a clean and simple design.
 
 Check it out here:
-➡️ https://anshramanath.github.io/personal-portfolio-website/
+https://anshramanath.github.io/personal-portfolio-website/
 
 ## Features
 
