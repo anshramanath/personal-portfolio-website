@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# 🎨 Personal Portfolio Website
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
