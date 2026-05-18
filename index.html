@@ -4,90 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ansh Ramanath</title>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon/world-favicon.png">
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- Intro Section -->
+  <div class="container" id="top">
+
+    <!-- Intro -->
     <section class="intro">
-      <h1 class="typewriter">Hello World!</h1>
-      <img src="images/headshot.jpeg" alt="Your Name" class="profile-pic">
+      <h1><span class="typewriter">Hello World!</span></h1>
+
+      <div class="intro-top">
+        <img src="images/headshot.jpeg" alt="Ansh Ramanath" class="profile-pic">
+        <div class="intro-meta">
+          <span class="location">📍 Austin, TX</span>
+        </div>
+      </div>
 
       <p class="bio">
-        My name is <span class="highlight-outline">Ansh Ramanath</span>, I'm a <span class="bold">junior</span> studying <span class="highlight">Comp Bio + CS @ UT Austin.</span> 
-        I'm passionate about solving complex problems at the intersection of <span class="bold">software engineering</span>, 
+        My name is <span class="highlight-outline">Ansh Ramanath</span>, I'm a <span class="bold">junior</span> studying <span class="highlight">Comp Bio + CS @ UT Austin.</span>
+        I'm passionate about solving complex problems at the intersection of <span class="bold">software engineering</span>,
         <span class="bold">machine learning</span>, and <span class="bold">data science</span>.
       </p>
 
       <p class="hobbies">
-        In my free time, I enjoy playing <span class="underline">volleyball</span> 🏐, discovering new restaurants 🥘, 
+        In my free time, I enjoy playing <span class="underline">volleyball</span> 🏐, discovering new restaurants 🥘,
         and watching movies 🍿.
       </p>
-      
     </section>
 
-    <section>
-      <h2>Where I've Worked</h2>
-      <div class="experience-grid">
-
-        <div class="experience-item">
-          <a href="https://oasys.health" target="_blank">
-            <img src="logos/oasys-logo.jpeg" alt="Oasys" class="experience-logo">
-          </a>
-          <div class="experience-text">
-            <h3>Oasys</h3>
-            <h4>🧬 Software Engineer Intern</h4>
-            <p>
-              Building an <span class="underline">AI-native EHR and practice management system</span> for therapists with 
-              real-time patient monitoring. Conducting <span class="bold">E2E testing</span> of the web platform 
-              and <span class="bold">translating it</span> into a <span class="highlight-outline">mobile app</span>.
-            </p>
-          </div>
-        </div>
-    
-        <div class="experience-item">
-          <a href="https://www.neweicgroup.com" target="_blank">
-            <img src="logos/neweic-logo.avif" alt="NEW EIC" class="experience-logo">
-          </a>
-          <div class="experience-text">
-            <h3>NEW EIC</h3>
-            <h4>🌐 Software Engineer Intern</h4>
-            <p>
-              Working on a full-stack <span class="highlight-outline">AI-enhanced note editor</span> using 
-              <span class="bold">Next.js</span>, <span class="bold">MUI</span>, and <span class="bold">Lexical</span>. Built 
-              features for rich text editing, handled backend 
-              APIs, and connected the app to <span class="bold">Supabase</span> with <span class="bold">Drizzle ORM</span>.
-            </p>
-          </div>
-        </div>
-    
-        <div class="experience-item">
-          <a href="https://undergradcollege.utexas.edu/academics/undergraduate-research" target="_blank">
-            <img src="logos/ut-logo.png" alt="UT Austin" class="experience-logo">
-          </a>
-          <div class="experience-text">
-            <h3>The University of Texas at Austin</h3>
-            <h4>🔬 Undergraduate Researcher</h4>
-            <p>
-              Creating <span class="highlight">codeAssist:</span> an open-source tool for personalized 
-              code feedback. Built full-stack features with <span class="underline">React,  
-              Flask, and PostgreSQL</span>, designed <span class="underline">REST APIs</span>, 
-              and containerized the app using <span class="underline">Docker</span>.
-            </p>
-          </div>
-        </div>
-    
+    <!-- Experience -->
+    <section id="work">
+      <div class="section-label">
+        <span class="num">01</span>
+        <span class="line"></span>
+        <span>where I've worked</span>
       </div>
-    </section>    
+
+      <div class="experience-wrap">
+        <div class="experience-grid">
+
+          <div class="experience-item">
+            <a href="https://oasys.health" target="_blank" rel="noopener" class="experience-logo-wrap">
+              <img src="logos/oasys-logo.jpeg" alt="Oasys" class="experience-logo">
+            </a>
+            <div class="experience-text">
+              <h3>Oasys</h3>
+              <h4>🧬 Software Engineer Intern</h4>
+              <p>
+                Building an <span class="underline">AI-native EHR and practice management system</span> for therapists with
+                real-time patient monitoring. Conducting <span class="bold">E2E testing</span> of the web platform
+                and <span class="bold">translating it</span> into a <span class="highlight-outline">mobile app</span>.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <a href="https://www.neweicgroup.com" target="_blank" rel="noopener" class="experience-logo-wrap">
+              <img src="logos/neweic-logo.avif" alt="NEW EIC" class="experience-logo">
+            </a>
+            <div class="experience-text">
+              <h3>NEW EIC</h3>
+              <h4>🌐 Software Engineer Intern</h4>
+              <p>
+                Working on a full-stack <span class="highlight-outline">AI-enhanced note editor</span> using
+                <span class="bold">Next.js</span>, <span class="bold">MUI</span>, and <span class="bold">Lexical</span>. Built
+                features for rich text editing, handled backend APIs, and connected the app to
+                <span class="bold">Supabase</span> with <span class="bold">Drizzle ORM</span>.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <a href="https://undergradcollege.utexas.edu/academics/undergraduate-research" target="_blank" rel="noopener" class="experience-logo-wrap">
+              <img src="logos/ut-logo.png" alt="UT Austin" class="experience-logo">
+            </a>
+            <div class="experience-text">
+              <h3>The University of Texas at Austin</h3>
+              <h4>🔬 Undergraduate Researcher</h4>
+              <p>
+                Creating <span class="highlight">codeAssist:</span> an open-source tool for personalized
+                code feedback. Built full-stack features with <span class="underline">React, Flask, and PostgreSQL</span>,
+                designed <span class="underline">REST APIs</span>, and containerized the app using <span class="underline">Docker</span>.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- Work & Projects -->
-    <section>
-      <h2>What I've Made</h2>
-    
+    <section id="projects">
+      <div class="section-label">
+        <span class="num">02</span>
+        <span class="line"></span>
+        <span>what I've made</span>
+      </div>
+
       <div class="work-grid">
 
         <div class="work-item">
@@ -96,13 +115,19 @@
               <h3>💬 Diagnosys</h3>
               <h4 class="tech-stack">Next.js · MUI · Cohere API · Google Cloud APIs</h4>
               <p>
-                A <span class="highlight-outline">disease prevention</span> site with a medical chat and local trends page. 
-                Provides <span class="bold">AI-powered diagnoses</span> with a <span class="underline">downloadable chart</span>, 
+                A <span class="highlight-outline">disease prevention</span> site with a medical chat and local trends page.
+                Provides <span class="bold">AI-powered diagnoses</span> with a <span class="underline">downloadable chart</span>,
                 plus real-time <span class="bold">disease</span>, <span class="bold">pollen</span>, and <span class="bold">air quality</span> data.
               </p>
-              <a href="https://github.com/anshramanath/diagnosys" target="_blank">GitHub</a> | <a href="https://diagnosys-lake.vercel.app" target="_blank">Live Site</a>
+              <div class="work-links">
+                <a href="https://github.com/anshramanath/diagnosys" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+                <span class="sep">·</span>
+                <a href="https://diagnosys-lake.vercel.app" target="_blank" rel="noopener">Live Site <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <img src="images/diagnosys.png" alt="Project Screenshot" class="work-image">
+            <div class="work-image-frame">
+              <img src="images/diagnosys.png" alt="Diagnosys" class="work-image">
+            </div>
           </div>
         </div>
 
@@ -112,13 +137,17 @@
               <h3>📬 Email Tracker</h3>
               <h4 class="tech-stack">Electron · React · Cohere API · Gmail API</h4>
               <p>
-                An <span class="highlight">Electron desktop app</span> that <span class="bold">fetches unread emails</span> and 
-                <span class="underline">summarizes them using Cohere's Command R+ Model</span> for convenience. Enter a 
+                An <span class="highlight">Electron desktop app</span> that <span class="bold">fetches unread emails</span> and
+                <span class="underline">summarizes them using Cohere's Command R+ Model</span> for convenience. Enter a
                 <span class="bold">keyword</span> to check for relevant emails.
               </p>
-              <a href="https://github.com/anshramanath/email-tracker" target="_blank">GitHub</a>
+              <div class="work-links">
+                <a href="https://github.com/anshramanath/email-tracker" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <img src="images/email-tracker.png" alt="Project Screenshot" class="work-image">
+            <div class="work-image-frame">
+              <img src="images/email-tracker.png" alt="Email Tracker" class="work-image">
+            </div>
           </div>
         </div>
 
@@ -128,13 +157,19 @@
               <h3>❤️ HealthAI App</h3>
               <h4 class="tech-stack">SwiftUI · HealthKit · OpenRouter API</h4>
               <p>
-                A <span class="highlight-outline">SwiftUI iOS app</span> that fetches Apple Health data and lets you 
-                chat with an AI assistant powered by the <span class="bold">DeepCoder 14B model</span>. 
+                A <span class="highlight-outline">SwiftUI iOS app</span> that fetches Apple Health data and lets you
+                chat with an AI assistant powered by the <span class="bold">DeepCoder 14B model</span>.
                 Includes charts to <span class="bold">visualize trends</span> by metric and duration.
               </p>
-              <a href="https://github.com/anshramanath/health-ai-app" target="_blank">GitHub</a> | <a href="https://anshramanath.github.io/health-ai-doc-website" target="_blank">Live Site</a>
+              <div class="work-links">
+                <a href="https://github.com/anshramanath/health-ai-app" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+                <span class="sep">·</span>
+                <a href="https://anshramanath.github.io/health-ai-doc-website" target="_blank" rel="noopener">Live Site <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <img src="images/healthai.png" alt="Project Screenshot" class="work-image">
+            <div class="work-image-frame">
+              <img src="images/healthai.png" alt="HealthAI" class="work-image">
+            </div>
           </div>
         </div>
 
@@ -144,14 +179,20 @@
               <h3>🎯 Poker Tracker</h3>
               <h4 class="tech-stack">Next.js · Firebase Auth · Firestore · Firebase Hosting</h4>
               <p>
-                A <span class="highlight">personalized poker tracker</span> for logging sessions. Built with 
-                <span class="bold">Next.js</span> and <span class="bold">Material UI</span>, powered entirely by 
-                <span class="bold">Firebase Auth</span>, <span class="bold">Firestore</span>, and 
+                A <span class="highlight">personalized poker tracker</span> for logging sessions. Built with
+                <span class="bold">Next.js</span> and <span class="bold">Material UI</span>, powered entirely by
+                <span class="bold">Firebase Auth</span>, <span class="bold">Firestore</span>, and
                 <span class="underline">Firebase Hosting</span>.
               </p>
-              <a href="https://github.com/anshramanath/poker-tracker" target="_blank">GitHub</a> | <a href="https://poker-tracker-1b418.web.app" target="_blank">Live Site</a>
+              <div class="work-links">
+                <a href="https://github.com/anshramanath/poker-tracker" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+                <span class="sep">·</span>
+                <a href="https://poker-tracker-1b418.web.app" target="_blank" rel="noopener">Live Site <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <img src="images/poker-tracker.png" alt="Project Screenshot" class="work-image">
+            <div class="work-image-frame">
+              <img src="images/poker-tracker.png" alt="Poker Tracker" class="work-image">
+            </div>
           </div>
         </div>
 
@@ -161,13 +202,19 @@
               <h3>🚀 Covalent Launch Website</h3>
               <h4 class="tech-stack">HTML · CSS · JavaScript</h4>
               <p>
-                The official website for <span class="highlight-outline">Covalent</span>, a social media agency. Built for 
-                <span class="bold">speed</span>, <span class="bold">accessibility</span>, and 
+                The official website for <span class="highlight-outline">Covalent</span>, a social media agency. Built for
+                <span class="bold">speed</span>, <span class="bold">accessibility</span>, and
                 <span class="bold">seamless use</span> across <span class="underline">desktop and mobile</span>.
               </p>
-              <a href="https://github.com/anshramanath/covalent-launch-website" target="_blank">GitHub</a> | <a href="https://covalent.llc" target="_blank">Live Site</a>
+              <div class="work-links">
+                <a href="https://github.com/anshramanath/covalent-launch-website" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+                <span class="sep">·</span>
+                <a href="https://covalent.llc" target="_blank" rel="noopener">Live Site <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <img src="images/covalent-launch.png" alt="Project Screenshot" class="work-image">
+            <div class="work-image-frame">
+              <img src="images/covalent-launch.png" alt="Covalent Launch" class="work-image">
+            </div>
           </div>
         </div>
 
@@ -177,14 +224,20 @@
               <h3>🍽️ Random Restaurant Finder</h3>
               <h4 class="tech-stack">Next.js · MUI · Overpass API · Nominatim · Vercel</h4>
               <p>
-                A <span class="highlight">restaurant discovery app</span> that suggests a random nearby  
-                spot based on cuisine and location. Built with <span class="bold">Next.js</span>, styled using 
-                <span class="bold">MUI</span>, and powered by <span class="bold">OpenStreetMap APIs</span>. 
+                A <span class="highlight">restaurant discovery app</span> that suggests a random nearby
+                spot based on cuisine and location. Built with <span class="bold">Next.js</span>, styled using
+                <span class="bold">MUI</span>, and powered by <span class="bold">OpenStreetMap APIs</span>.
                 Deployed on <span class="underline">Vercel</span>.
               </p>
-              <a href="https://github.com/anshramanath/random-restaurant-finder" target="_blank">GitHub</a> | <a href="https://random-restaurant-finder-six.vercel.app" target="_blank">Live Site</a>
+              <div class="work-links">
+                <a href="https://github.com/anshramanath/random-restaurant-finder" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+                <span class="sep">·</span>
+                <a href="https://random-restaurant-finder-six.vercel.app" target="_blank" rel="noopener">Live Site <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <img src="images/korean-food.png" alt="Project Screenshot" class="work-image">
+            <div class="work-image-frame">
+              <img src="images/korean-food.png" alt="Random Restaurant Finder" class="work-image">
+            </div>
           </div>
         </div>
 
@@ -194,13 +247,17 @@
               <h3>📝 Posts App</h3>
               <h4 class="tech-stack">React · Bootstrap · Node.js · MongoDB · AWS S3</h4>
               <p>
-                A <span class="highlight-outline">post feed app</span> where users can share posts with a title, 
-                description, and image. Images are uploaded to <span class="underline">AWS S3</span> and posts are 
+                A <span class="highlight-outline">post feed app</span> where users can share posts with a title,
+                description, and image. Images are uploaded to <span class="underline">AWS S3</span> and posts are
                 stored in <span class="bold">MongoDB</span>, with a clean UI built using <span class="bold">React Bootstrap</span>.
               </p>
-              <a href="https://github.com/anshramanath/posts-app" target="_blank">GitHub</a>
+              <div class="work-links">
+                <a href="https://github.com/anshramanath/posts-app" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <img src="images/post-app.png" alt="Project Screenshot" class="work-image">
+            <div class="work-image-frame">
+              <img src="images/post-app.png" alt="Posts App" class="work-image">
+            </div>
           </div>
         </div>
 
@@ -210,53 +267,72 @@
               <h3>♠️ Poker Ledger</h3>
               <h4 class="tech-stack">React · Typescript · Node.js · Express.js · MongoDB</h4>
               <p>
-                A simple, fun <span class="highlight">app for tracking</span> poker night buy-ins, cash-outs, 
-                and balances — with data stored in <span class="bold">MongoDB</span> and a full stack built using 
+                A simple, fun <span class="highlight">app for tracking</span> poker night buy-ins, cash-outs,
+                and balances — with data stored in <span class="bold">MongoDB</span> and a full stack built using
                 <span class="bold">React (Typescript)</span>, <span class="bold">Node.js</span>, and <span class="bold">Express.js</span>.
               </p>
-              <a href="https://github.com/anshramanath/poker-ledger" target="_blank">GitHub</a>
+              <div class="work-links">
+                <a href="https://github.com/anshramanath/poker-ledger" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <img src="images/poker-ledger.png" alt="Project Screenshot" class="work-image">
+            <div class="work-image-frame">
+              <img src="images/poker-ledger.png" alt="Poker Ledger" class="work-image">
+            </div>
           </div>
         </div>
-    
+
         <div class="work-item">
           <div class="work-content">
             <div class="work-text">
               <h3>🌄 Covalent Demo Website</h3>
               <h4 class="tech-stack">HTML · CSS · JavaScript</h4>
               <p>
-                A <span class="underline">responsive marketing site</span> featuring smooth scrolling, dynamic effects, and a clean, 
+                A <span class="underline">responsive marketing site</span> featuring smooth scrolling, dynamic effects, and a clean,
                 bold design <span class="highlight-outline">for a client</span> social media agency.
               </p>
-              <a href="https://github.com/anshramanath/covalent-demo-website" target="_blank">GitHub</a> | <a href="https://anshramanath.github.io/covalent-demo-website" target="_blank">Live Site</a>
+              <div class="work-links">
+                <a href="https://github.com/anshramanath/covalent-demo-website" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+                <span class="sep">·</span>
+                <a href="https://anshramanath.github.io/covalent-demo-website" target="_blank" rel="noopener">Live Site <span class="arrow">↗</span></a>
+              </div>
             </div>
-            <img src="images/covalent-demo.png" alt="Project Screenshot" class="work-image">
+            <div class="work-image-frame">
+              <img src="images/covalent-demo.png" alt="Covalent Demo" class="work-image">
+            </div>
           </div>
         </div>
 
       </div>
-
-    </section>    
+    </section>
 
     <!-- Contact -->
-    <section>
-      <h2>Reach Out</h2>
-
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/anshramanath" target="_blank">
-          <img src="icons/linkedin-icon.png" alt="LinkedIn" class="contact-icon">
-        </a>
-        <a href="https://github.com/anshramanath" target="_blank">
-          <img src="icons/github-icon.png" alt="GitHub" class="contact-icon">
-        </a>
-        <a href="mailto:anshramanath04@gmail.com">
-          <img src="icons/gmail-icon.png" alt="Email" class="contact-icon">
-        </a>
+    <section id="contact">
+      <div class="section-label">
+        <span class="num">03</span>
+        <span class="line"></span>
+        <span>get in touch</span>
       </div>
 
-    </section>    
+      <div class="contact-card">
+        <div class="contact-text">
+          <strong>Always up for a good conversation.</strong>
+          <span>Drop a line — I'll get back within a day.</span>
+        </div>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/anshramanath" target="_blank" rel="noopener" class="contact-link" aria-label="LinkedIn">
+            <img src="icons/linkedin-icon.png" alt="" class="contact-icon">
+          </a>
+          <a href="https://github.com/anshramanath" target="_blank" rel="noopener" class="contact-link" aria-label="GitHub">
+            <img src="icons/github-icon.png" alt="" class="contact-icon">
+          </a>
+          <a href="mailto:anshramanath04@gmail.com" class="contact-link" aria-label="Email">
+            <img src="icons/gmail-icon.png" alt="" class="contact-icon">
+          </a>
+        </div>
+      </div>
+    </section>
 
   </div>
+
 </body>
 </html>
