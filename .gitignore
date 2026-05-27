@@ -1,2 +1,12 @@
-# Ignore all .DS_Store files (root + subfolders)
+# macOS
 **/.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Misc
+*.log
